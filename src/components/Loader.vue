@@ -88,7 +88,7 @@ const getCircleTransform = (circleIndex: number) => {
 .circle {
   width: 100%;
   height: 100%;
-  background-color: hsl(var(--hue), 40%, 70%);
+  background-color: hsl(var(--hue, 200), 40%, 70%);
   border-radius: calc(v-bind('props.circleSize') * 1px / 2);
   animation: loader-rotation 2s infinite linear reverse,
     pulse 1s infinite linear, hue-rotate 10s infinite linear;
